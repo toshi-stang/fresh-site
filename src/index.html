@@ -3,26 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fresh Site</title>
+    <title>Connect Paycor to Dynamis</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <section class="hero" aria-label="Ltd Edition">
-      <div class="hero__logo">
-        <img src="./assets/ltd-edition-logo.svg" alt="Ltd Edition エドマエ" />
-      </div>
-      <div class="hero__picture">
-        <img
-          src="./assets/hero-sushi.png"
-          alt="A single piece of nigiri on a dark stone block"
-        />
-      </div>
-    </section>
+    <header class="site-header">
+      <img
+        class="site-header__logo"
+        src="./assets/dynamis-logo.svg"
+        width="220"
+        height="50"
+        alt="dynamis"
+      />
+    </header>
+
     <main>
-      <h1>Fresh project</h1>
-      <p>Your Parcel setup is working.</p>
-      <p>Changed, pushed, and deplyed.</p>
+      <section class="page-title">
+        <p class="page-title__eyebrow" data-guide-eyebrow></p>
+        <h1 class="page-title__heading" data-guide-provider></h1>
+      </section>
+
+      <div class="layout">
+        <section class="wizard" aria-label="Onboarding steps">
+          <div class="wizard__progress">
+            <p class="wizard__progress-label" data-progress-label></p>
+            <ol class="wizard__dots" data-progress-dots></ol>
+            <div
+              class="wizard__bar"
+              role="progressbar"
+              aria-valuemin="0"
+              data-progress-bar
+            >
+              <span class="wizard__bar-fill" data-progress-fill></span>
+            </div>
+          </div>
+
+          <div class="chat" data-chat aria-live="polite"></div>
+
+          <div class="wizard__nav">
+            <button type="button" class="button button--ghost" data-back></button>
+            <button type="button" class="button button--primary" data-next></button>
+          </div>
+        </section>
+
+        <aside class="help" aria-labelledby="help-heading">
+          <h2 class="help__heading" id="help-heading" data-support-heading></h2>
+          <p class="help__message" data-support-message></p>
+          <a class="help__email" data-support-email></a>
+        </aside>
+      </div>
     </main>
+
+    <footer class="site-footer">
+      <p>©2026 dynamis. All Rights Reserved.</p>
+    </footer>
+
     <script type="module" src="./index.js"></script>
   </body>
 </html>
