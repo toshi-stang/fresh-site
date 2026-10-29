@@ -1,7 +1,45 @@
 body {
   margin: 0;
-  padding: 40px;
   font-family: Arial, sans-serif;
   background: #f6f6f6;
   color: #222;
+}
+
+main {
+  padding: 40px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 38px 16px;
+  background: #000;
+  overflow: hidden;
+}
+
+.hero__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 152.5px;
+}
+
+.hero__logo img {
+  display: block;
+}
+
+.hero__picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(994px, 100%);
+  aspect-ratio: 994 / 520;
+}
+
+.hero__picture img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
